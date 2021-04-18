@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Choice */
+
+.form__choice {
+  display: block;
+}
+
+.form__choice input {
+  display: none;
+}
+
+.form__choice input ~ span {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.25rem 1rem 0.25rem 0;
+  min-width: 10rem;
+}
+
+.form__choice input:checked ~ span {
+  background: lightgray;
+}
+
+.form__choice + .form__choice {
+  margin-top: 1rem;
+}
+
+/* Keyboard shortcut */
+
+.form__keyboard-shortcut {
+  padding: 0.25rem 0.5rem;
+  background: white;
+  border-right: 1px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
